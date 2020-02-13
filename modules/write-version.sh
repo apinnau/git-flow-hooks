@@ -14,7 +14,7 @@ fi
 
 # update package.json
 if [ -f "$PACKAGE_JSON_FILE" ]; then
-    npm version $VERSION
+    npm version $VERSION --no-git-tag-version
     git add $PACKAGE_JSON_FILE
 fi
 
